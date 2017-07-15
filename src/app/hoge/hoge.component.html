@@ -1,0 +1,14 @@
+<!--<button (click)="flg = !flg">toggle</button>
+<div *ngIf="flg">hoge</div>-->
+<div *ngFor="let item of ary;
+             let i = index;
+             let isOdd = odd;
+             let isEven = even;
+             let isFirst = first;
+             let isLast = last;
+             ">{{i}} {{item}}
+  <span *ngIf="isOdd">(odd)</span>
+  <span *ngIf="isEven">(even)</span>
+  <span *ngIf="isFirst">(first)</span>
+  <span *ngIf="isLast">(last)</span>
+</div>
